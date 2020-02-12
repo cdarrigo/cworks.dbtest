@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyVersion>1.2020.0212.3</AssemblyVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageVersion>1.2020.0212.3</PackageVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <FileVersion>1.2020.0212.3</FileVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>1.2020.0212.3</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <Authors>Chris Darrigo</Authors>
+    <Company />
+    <RepositoryUrl>https://github.com/cdarrigo/cworks.dbtest</RepositoryUrl>
+    <AssemblyName>cworks.DbTest</AssemblyName>
+    <RootNamespace>cworks.DbTest</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="BumpAssemblyVersions" Version="1.4.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BumpVersionSpec Include="Version" DefaultVersion="1.0.0.0" CreateNew="true" UseUtc="true" MayReset="true" MinorProviderTemplate="YearVersion" PatchProviderTemplate="MonthDayOfMonthMultipartVersionProvider" BuildProviderTemplate="Increment" />
+    <BumpVersionSpec Include="FileVersion" DefaultVersion="1.0.0.0" CreateNew="true" UseUtc="true" MayReset="true" MinorProviderTemplate="YearVersion" PatchProviderTemplate="MonthDayOfMonthMultipartVersionProvider" BuildProviderTemplate="Increment" />
+    <BumpVersionSpec Include="PackageVersion" DefaultVersion="1.0.0.0" CreateNew="true" UseUtc="true" MayReset="true" MinorProviderTemplate="YearVersion" PatchProviderTemplate="MonthDayOfMonthMultipartVersionProvider" BuildProviderTemplate="Increment" />
+    <BumpVersionSpec Include="AssemblyVersion" DefaultVersion="1.0.0.0" CreateNew="true" UseUtc="true" MayReset="true" MinorProviderTemplate="YearVersion" PatchProviderTemplate="MonthDayOfMonthMultipartVersionProvider" BuildProviderTemplate="Increment" />
+  </ItemGroup>
+</Project>
