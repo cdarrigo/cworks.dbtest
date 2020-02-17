@@ -13,7 +13,7 @@ Using DbTest, developers can author tests to ensure the functionality of their s
 
 DbTests supports .net core applications that leverage Entity Framework, or straight ADO, or a combination of both. DbTests utilizes XUnit for a test runner and is easy to get set up. 
 
-Add a reference to the appropriate cWorks.DbTest package (EF core users should use [cworks.DbTest.EFCore] (https://www.nuget.org/packages/cworks.DbTest.EFCore/) , and ADO users should use [cworks.DbTest.ADO] (https://www.nuget.org/packages/cworks.DbTest.ADO/)). 
+Add a reference to the appropriate cWorks.DbTest package (EF core users should use [cworks.DbTest.EFCore](https://www.nuget.org/packages/cworks.DbTest.EFCore/) , and ADO users should use [cworks.DbTest.ADO](https://www.nuget.org/packages/cworks.DbTest.ADO/)). 
 
 Configure the test runner db connection, and begin authoring your tests. 
 
